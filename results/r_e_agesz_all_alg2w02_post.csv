@@ -1,0 +1,7 @@
+age4,size,Variable,number,coverage,Jk,significantconf2,significantalg2w02,missing
+,,emp,90,100,100,0.256,0.256,0
+,,estabs,90,100,100,0.267,0.267,0
+,,estabs entry,64,100,100,0.109,0.109,0
+,,job creation,90,100,100,0.178,0.178,0
+,,job creation births,90,97.7,91.9,0.078,0.08,2.2
+,,job creation continuers,81,88.9,85.3,0.21,0.173,0

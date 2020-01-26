@@ -1,0 +1,27 @@
+\begin{table}[p]
+		\setlength{\tabcolsep}{6pt}
+\caption{Analytic validity: Feasibility of AR(2) regressions \label{tab:bds_e_pctmiss}}
+\centering
+%\begin{tabular}{|lc|r|rrr|}\hline%
+\csvreader[tabular=|l|r|r|rrr|rrr|r|,table head=\hline 
+	&Number 
+	&\multicolumn{8}{c|}{Percent} 
+\\
+Variable 
+	&feasible 
+	& \multicolumn{8}{c|}{Infeasible}                
+\\
+    & $X_{k^\prime t}$ 
+    & $X_{k^\prime t}^{(s)}$ 
+    & $X_{k^\prime t}^{(0)}$ 
+    & $X_{k^\prime t}^{(i)}$
+    & $X_{k^\prime t}^{(in)}$
+    & $X_{k^\prime t}^{(ii)}$
+    & $X_{k^\prime t}^{(iiw)}$
+    & $X_{k^\prime t}^{(iin)}$
+    & $X_{k^\prime t}^{(n)}$
+    \\\hline,
+	late after line=\\,late after last line=\\\hline]%
+{../results/r_e_agesz_all_missing.csv}{Variable=\V,number=\colz,missing1=\cola,missing2=\colb,missing3=\colc,missing4=\cold,missing5=\cole,missing6=\colf,missing7=\colg,missing8=\colh}%
+{\V &  \colz & \cola & \colb & \colc & \cold & \cole & \colf & \colg &\colh}%
+\end{table}

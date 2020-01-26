@@ -1,0 +1,25 @@
+\begin{table}[p]
+			\setlength{\tabcolsep}{6pt}
+\caption{Analytic validity: AR(2) regressions: Interval 
+overlap\label{tab:bds_e_jk}}
+\centering
+%\begin{tabular}{|lc|r|rrr|}\hline%
+\csvreader[tabular=|l|r|rrr|rrr|r|,table head=\hline 
+	& \multicolumn{8}{c|}{Interval} 
+\\
+Variable 
+	& \multicolumn{8}{c|}{overlap}
+\\
+    & $J_k^{(s)}$ 
+    & $J_k^{(0)}$ 
+    & $J_k^{(i)}$
+    & $J_k^{(in)}$
+    & $J_k^{(ii)}$
+    & $J_k^{(iiw)}$
+    & $J_k^{(iin)}$
+    & $J_k^{(n)}$
+    \\\hline,
+	late after line=\\,late after last line=\\\hline]%
+{../results/r_e_agesz_all_Jk.csv}{Variable=\V,Jk1=\cola,Jk2=\colb,Jk3=\colc,Jk4=\cold,Jk5=\cole,Jk6=\colf,Jk7=\colg,Jk8=\colh}%
+{\V &  \cola & \colb & \colc & \cold & \cole & \colf & \colg &\colh}%
+\end{table}

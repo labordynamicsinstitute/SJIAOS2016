@@ -1,0 +1,15 @@
+type,level,percentsup,cells,typename,estabsentry,jcbirths,jcconts
+age,e,0.3,337,Age,0,0.3,0.3
+ageisz,e,18.5,3033,Age-Initial Size,0,14.2,14.2
+agesic,e,3,3033,Age-SIC,0,2.9,2.9
+agest,e,3.3,19023,Age-State,0,3.2,3.2
+agesz,e,26.9,3033,Age-Size,0,16.1,16.1
+all,e,0,36,All,0,0,0
+isz,e,0.3,324,Initial Size,0,0,0
+iszsic,e,19.8,2916,Initial Size-SIC,0,6.5,6.8
+iszst,e,26.8,18357,Initial Size-State,0,11.2,11.6
+sic,e,0,324,SIC,0,0,0
+st,e,0,1836,State,0,0,0
+sz,e,0.3,324,Size,0,0,0
+szsic,e,28.1,2915,Size-SIC,0,11.6,12.3
+szst,e,31.7,18358,Size-State,0,14.5,15

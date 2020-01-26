@@ -1,0 +1,59 @@
+% $Id: intro.tex 1773 2015-12-18 22:07:18Z lv39 $ 
+% $URL: https://forge.cornell.edu/svn/repos/lv39_papers/SynLBD/text/SJIAOS2015/intro.tex $
+
+Statistics based on detailed business data are increasingly relied upon to make informed 
+decisions by firms and governments. Novel statistics, for instance on business startups and firm 
+dynamics \cite{BDS2}, are valuable additions to the toolbox of evidence-based policy and 
+business decisions. At the same time, the sparsity and skewness of business data makes 
+disclosure avoidance a challenge. Early \ac{CBP} statistics (before the advent of noise infusion as 
+a disclosure avoidance measure) had between 10 and 40 percent of values suppressed.\footnote{Example taken from 2004 CBP, national by NAICS tabulations, across all size and NAICS cells.} 
+
+In recent years, the use of fully or partially synthetic data has allowed the publication of 
+increasingly detailed statistics. Going back to the seminal contributions of \cite{rubin93} and 
+\cite{little93}, the release of statistics based on partially synthetic data in the U.S. Census 
+Bureau's \ac{LODES} \cite{Ashwin2008} and \ac{ACS} 
+\cite{Rodriguez2007,hawala2008,zayatzjsm2009}⁠ strikes a 
+new 
+balance between detailed statistics and appropriate disclosure avoidance. Other cases of using 
+synthetic data for the purpose of tabulation exist
+\cite{AbowdEtAl2012,RePEc:cen:wpaper:13-19}.
+  Furthermore, partially 
+synthetic microdata \cite{Drechsler2012,KinneyEtAl2011,ssafinal} has been released to 
+end-users as a access and analysis mechanism \cite{CES-WP-2014-10}.
+
+In this paper, we explore the use of tabulations based on partially synthetic data as a disclosure 
+avoidance mechanism for certain at-risk tabulation cells. This is similar in spirit to the originally 
+proposed uses of synthetic data \cite{little93,rubin93}, and follows similar uses of  
+partially synthetic data in the \ac{ACS} \cite{hawala2008,zayatzjsm2009}⁠. Our approach differs in 
+that we address longitudinal consistency of the data explicitly, an important feature of the 
+statistics underlying our paper. 
+
+To illustrate and implement the proposed mechanism, we use the \acf{BDS}. The \ac{BDS} were 
+first released in 
+2008, providing novel statistics on business startups on a comprehensive basis for the U.S. 
+economy \cite{BDS2}. They have been used in a number of recent publications, addressing %\margincomment{Re MHS}{Addressed Martha's comment here.}
+questions of  job creation and destruction, establishment births and deaths, and firm startups and shutdowns %\margincomment{LV}{Added additional references}
+\cite{NBERw16300,RePEc:bin:bpeajo:v:43:y:2011:i:2011-02:p:73-142,10.1257/jep.28.3.3,pugsley2014grown}. 
+The \ac{BDS} are sourced from confidential microdata in the \acf{LBD}. It
+provides measures of business openings and closings, and job creation and destruction, by a variety of cross-classifications (firm and establishment age and size, industrial sector, and geography).
+Since the first release, additional cross-tabulations have been added each year: initially provided 
+only based on  firm charateristics, tabulations based on establishment characteristics were later 
+added, as were additional geography cross-tabulations (Metropolitan Statistical Area, and 
+Metro/Non-Metro).  Sensitive data are currently protected through suppression. However, as 
+additional tabulations are being developed, at ever more detailed geographic levels, the number 
+of suppressions increases dramatically.\footnote{The next set of expansions include plans to 
+provide additional industry and geography detail.}  
+
+We leverage the existence of a sophisticated partially synthetic data file the Synthetic LBD 
+\cite{SynLBD20,KinneyEtAl2011}, 
+henceforth \acs{SynLBD} -- in combination with the techniques first expressed in 
+\cite{Gittings2009thesis} and \cite{RePEc:bes:jnlasa:v:105:i:492:y:2010:p:1347-1357} to replace 
+sensitive cells with tabulations based on synthetic 
+data.  A previous paper \cite{psd2014a} described early results from the implementation of the 
+simplest algorithm described here. In this version, we refine those algorithms, and present new 
+results. 
+We start by describing the extent of suppressions in the \ac{BDS}, then lay out the algorithm to 
+combine synthetic and confidential data for the purposes of tabulation. Preliminary results are 
+discussed, and an outlook given on the next steps necessary to achieve a robust public-use 
+tabulation. 
+

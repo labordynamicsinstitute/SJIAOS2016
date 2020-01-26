@@ -1,0 +1,82 @@
+% $Id: synbds-noise-synthetic-unece2015.tex 1672 2015-03-13 15:07:42Z lv39 $
+% $URL: https://forge.cornell.edu/svn/repos/lv39_papers/SynLBD/text/UNECE2015/synbds-noise-synthetic-unece2015.tex $
+
+\documentclass[runningheads,a4paper,11pt]{llncs}
+
+\usepackage{amssymb}
+\setcounter{tocdepth}{3}
+\usepackage{graphicx}
+%\usepackage{algorithm}
+\usepackage{algpseudocode}
+\newenvironment{algorithm}{\begin{center}\hrule\ \\}{\hrule\end{center}}
+\usepackage{url}
+%\urldef{\mailsa}\path|{joerg.drechsler@iab.de}
+%\urldef{\mailsb}\path|{lars.vilhuber@cornell.edu}
+%\urldef{\mailsc}\path|erika.siebert-cole, peter.strasser, lncs}@springer.com|
+\newcommand{\keywords}[1]{\par\addvspace\baselineskip
+\noindent\keywordname\enspace\ignorespaces#1}
+\usepackage{csvsimple}
+\usepackage{tikz}
+\usepackage{calc}
+\usepackage[printonlyused]{acronym}
+
+
+\newcommand{\mytitle}{Assessing the data quality of public use
+tabulations produced from synthetic data: Synthetic Business Dynamics
+Statistics}
+\newcommand{\myshorttitle}{Partially Synthetic BDS}
+\newcommand{\myversion}{\today}  %alternate version
+\newcommand{\alert}{}
+\newcommand{\sep}{,}
+
+\begin{document}
+
+\mainmatter  % start of an individual contribution
+
+% first the title is needed
+\title{\mytitle}
+
+% a short form should be given in case it is too long for the running head
+\titlerunning{\myshorttitle}
+
+% the name(s) of the author(s) follow(s) next
+%
+% NB: Chinese authors should write their first names(s) in front of
+% their surnames. This ensures that the names appear correctly in
+% the running heads and the author index.
+%
+\author{Javier Miranda\inst{1}
+\and Lars Vilhuber\inst{2}}
+%
+\authorrunning{J. Miranda and L. Vilhuber}
+% (feature abused for this document to repeat the title also on left hand pages)
+
+% the affiliations are given next; don't give your e-mail address
+% unless you accept that it will be published
+\institute{U.S. Bureau of the Census, Washington, DC, USA \email{javier.miranda@census.gov} \and
+Cornell University, Ithaca, NY, USA, \email{lars.vilhuber@cornell.edu}, Corresponding author\\
+}
+
+%
+% NB: a more complex sample for affiliations and the mapping to the
+% corresponding authors can be found in the file "llncs.dem"
+% (search for the string "\mainmatter" where a contribution starts).
+% "llncs.dem" accompanies the document class "llncs.cls".
+%
+
+\toctitle{Lecture Notes in Computer Science}
+\tocauthor{Javier Miranda and Lars Vilhuber}
+\maketitle
+
+%\date{\myversion}
+\begin{abstract}
+\input{abstract}
+\keywords{synthetic data, statistical disclosure limitation, time-series, local labor markets, gross job flows , confidentiality protection}
+\end{abstract}
+
+{\tiny
+\begin{verbatim}
+        This version: $Id: synbds-noise-synthetic-unece2015.tex 1672 2015-03-13 15:07:42Z lv39 $
+\end{verbatim}
+}
+\end{document}

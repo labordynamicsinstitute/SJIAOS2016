@@ -1,0 +1,91 @@
+% $Id: appendix.tex 1793 2016-01-18 18:18:16Z lv39 $
+\appendix
+\section*{Appendix}
+%\clearpage
+\section*{Ramp algorithm in SAS}
+\lstinputlisting{rampdist.sas}
+
+\clearpage
+\section*{Tables}
+
+\begin{table}
+\caption{Suppressions in establishment-level BDS\label{tab:bds_e}}
+\centering
+\begin{tabular}{|l|r|rrr|}\hline%
+               &                 \bfseries Number &\multicolumn{3}{c|}{\bfseries Suppressions (\%)}\\
+\cline{3-5}
+\bfseries Type  &\bfseries of     &                            & \multicolumn{2}{c|}{\bfseries Job creation}\\
+\cline{4-5}
+                                                          &\bfseries  cells& \bfseries Any  &\bfseries by entrants &\bfseries 
+                                                          by continuers\\
+\hline
+\csvreader[head to column names,late after line=\\,late after last line=\\\hline]%
+{programs/bds_e_suppressions_multi.csv}{}%
+{\typename &  \cells & \percentsup  & \jcbirths &\jcconts}%
+\multicolumn{4}{p{0.6\textwidth}}{\footnotesize Note: Cells are year $x$ categories, where the 
+number of categories varies by published table.}
+\end{tabular}
+\end{table}
+
+\clearpage
+\input{table_pctmiss}
+\clearpage
+\input{table_pctsign}
+
+\clearpage
+\input{table_coverage}
+\clearpage
+\input{table_jk}
+
+\clearpage
+\begin{table}[p]
+\caption{Suppressions in firm-level BDS\label{tab:bds_f}}
+\centering
+\begin{tabular}{lcrr}\hline%
+&&\bfseries No. of&\bfseries Percent\\
+\bfseries Type & \bfseries Level & \bfseries  cells
+& \bfseries  suppressed\\
+\hline
+\\
+\csvreader[head to column names]%
+{programs/bds_f_suppressions.csv}{}%
+{\type & \level & \cells & \percentsup\\}%
+\\\hline
+\multicolumn{4}{p{0.5\textwidth}}{\footnotesize Note: Cells are year $x$ categories, where the 
+number of categories varies by published table.}
+
+\end{tabular}
+\end{table}
+
+\clearpage
+\section*{Figures}
+
+\begin{figure}[h!]
+	\centering
+	\caption{Empirical distribution of noise\label{fig:fuzzgraph}}
+	\includegraphics[width=0.9\textwidth]{SGPlotHiDef.png}
+\end{figure}
+
+\clearpage
+\begin{figure}[p]
+	\centering
+	\caption{Levels of released and synthetic data\label{fig:level_denom}}
+	\includegraphics[width=0.45\textwidth]{results/graph_bds_real_vs_syn_denom_R}
+	\includegraphics[width=0.45\textwidth]{results/graph_bds_real_vs_syn_job_creation_R}
+	
+	\includegraphics[width=0.45\textwidth]{results/graph_bds_real_vs_syn_job_creation_births_R}
+	\includegraphics[width=0.45\textwidth]{results/graph_bds_real_vs_syn_job_creation_continuers_R}
+\end{figure}
+
+\clearpage
+\begin{figure}[p]
+\centering
+\caption{Differences between released and synthetic data\label{fig:pct_denom}\label{fig:pct_jc}}
+%\includegraphics[width=0.45\textwidth]{results/graph_bds_real_vs_syn_pct_denom}
+%\includegraphics[width=0.45\textwidth]{results/graph_bds_real_vs_syn_pct_job_creation}
+%
+%\includegraphics[width=0.45\textwidth]{results/graph_bds_real_vs_syn_pct_job_creation_births}
+%\includegraphics[width=0.45\textwidth]{results/graph_bds_real_vs_syn_pct_job_creation_continuers}
+\includegraphics[width=\textwidth]{results/pct_diff_8in}
+\end{figure}
+

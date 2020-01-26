@@ -1,0 +1,25 @@
+\begin{table}[p]
+		\setlength{\tabcolsep}{6pt}
+\caption{Analytic validity: AR(2) regressions: 
+Coverage\label{tab:bds_e_coverage}}
+\centering
+%\begin{tabular}{|lc|r|rrr|}\hline%
+\csvreader[tabular=|l|r|rrr|rrr|r|,table head=\hline 
+	& \multicolumn{8}{c|}{} 
+\\
+Variable 
+	& \multicolumn{8}{c|}{Coverage}
+\\
+    & $\rho_{1}^{(s)}$ 
+    & $\rho_{1}^{(0)}$ 
+    & $\rho_{1}^{(i)}$
+    & $\rho_{1}^{(in)}$
+    & $\rho_{1}^{(ii)}$
+    & $\rho_{1}^{(iiw)}$
+    & $\rho_{1}^{(iin)}$
+    & $\rho_{1}^{(n)}$
+    \\\hline,
+	late after line=\\,late after last line=\\\hline]%
+{results/r_e_agesz_all_coverage.csv}{Variable=\V,coverage1=\cola,coverage2=\colb,coverage3=\colc,coverage4=\cold,coverage5=\cole,coverage6=\colf,coverage7=\colg,coverage8=\colh}%
+{\V &  \cola & \colb & \colc & \cold & \cole  & \colf & \colg &\colh}%
+\end{table}

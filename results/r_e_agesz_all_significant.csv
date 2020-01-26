@@ -1,0 +1,7 @@
+Variable,significant1,significantconf2,significant2,significant3,significant4,significant5,significant6,significant7,significant8
+emp,0.2,0.256,0.256,0.256,0.256,0.256,0.256,0.256,0.244
+estabs,0.178,0.267,0.267,0.267,0.267,0.267,0.267,0.267,0.267
+estabsentry,0,0.109,0.063,0.078,0.078,0.109,0.109,0.109,0.078
+jobcreation,0.1,0.178,0.178,0.178,0.178,0.178,0.178,0.178,0.167
+jobcreationbirths,0.015,0.078,0.068,0.09,0.115,0.067,0.08,0.067,0.078
+jobcreationcontinuers,0.111,0.21,0.184,0.16,0.247,0.173,0.173,0.16,0.173
